@@ -1,0 +1,207 @@
+/*
+Copyright (c) 2007, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.3.0
+*/
+/*reset.css*/body{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup,sub{line-height:-1px;vertical-align:text-top;}sub{vertical-align:text-bottom;}input, textarea, select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+/*fonts.css*/body {font:13px/1.22 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small;}table {font-size:inherit;font:100%;}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:99%;}
+/*grids.css*/body{text-align:center;}#ft{clear:both;}#doc,#doc2,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7{margin:auto;text-align:left;width:57.69em;*width:56.301em;min-width:750px;}#doc2{width:73.074em;*width:71.313em;}#doc3{margin:auto 10px;width:auto;}#doc4{width:74.923em;*width:73.117em;}.yui-b{position:relative;}.yui-b{_position:static;}#yui-main .yui-b{position:static;}#yui-main{width:100%;}.yui-t1 #yui-main,.yui-t2 #yui-main,.yui-t3 #yui-main{float:right;margin-left:-25em;}.yui-t4 #yui-main,.yui-t5 #yui-main,.yui-t6 #yui-main{float:left;margin-right:-25em;}.yui-t1 .yui-b{float:left;width:12.3207em;*width:12.0106em;}.yui-t1 #yui-main .yui-b{margin-left:13.3207em;*margin-left:13.0106em;}.yui-t2 .yui-b{float:left;width:13.8456em;*width:13.512em;}.yui-t2 #yui-main .yui-b{margin-left:14.8456em;*margin-left:14.512em;}.yui-t3 .yui-b{float:left;width:23.0759em;*width:22.52em;}.yui-t3 #yui-main .yui-b{margin-left:24.0759em;*margin-left:23.52em;}.yui-t4 .yui-b{float:right;width:13.8456em;*width:13.512em;}.yui-t4 #yui-main .yui-b{margin-right:14.8456em;*margin-right:14.512em;}.yui-t5 .yui-b{float:right;width:18.4608em;*width:18.016em;}.yui-t5 #yui-main .yui-b{margin-right:19.4608em;*margin-right:19.016em;}.yui-t6 .yui-b{float:right;width:23.0759em;*width:22.52em;}.yui-t6 #yui-main .yui-b{margin-right:24.0759em;*margin-right:23.52em;}.yui-t7 #yui-main .yui-b{display:block;margin:0 0 1em 0;}#yui-main .yui-b{float:none;width:auto;}.yui-gb .yui-g,.yui-gb .yui-gb,.yui-gb .yui-u,.yui-g .yui-gb .yui-u,.yui-gb .yui-gc,.yui-gb .yui-gd,.yui-gb .yui-ge,.yui-gb .yui-gf,.yui-gc .yui-u,.yui-gc .yui-g,.yui-gd .yui-u{float:left;margin-left:2%;width:32%;}.yui-gb .yui-gb .yui-u,.yui-gb .yui-gc .yui-u{_margin-left:1.2%;*margin-left:1.7%;}.yui-g .yui-gb .yui-u{_margin-left:.8%;}.yui-gb .yui-u{margin-left:2%;width:32%;float:right;*width:31.8%;}.yui-gb div.first{margin-left:0;*margin-right:1px;float:left;}.yui-gb .yui-gb div.first{*margin-right:0;width:31.7%;}.yui-gb .yui-gc div.first,.yui-gb .yui-gd div.first{*margin-right:0;}.yui-g .yui-gc div.first,.yui-g .yui-ge div.first{float:left;}.yui-gb .yui-gd .yui-u{*width:66%;_width:61.2%;}.yui-gb .yui-gd div.first{*width:31%;_width:29.5%;}.yui-gb .yui-gc .yui-u,.yui-g .yui-gc .yui-u{_float:right;width:32%;_width:29.9%;}.yui-gb .yui-gc div.first{width:66%;*width:64.5%;*float:left;*margin-left:0;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf .yui-u{margin:0;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf,.yui-gc .yui-u,.yui-gd .yui-g,.yui-g .yui-gc .yui-u,.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf .yui-g,.yui-gf .yui-u{float:right;display:inline;}.yui-g div.first,.yui-g div.first,.yui-gc div.first,.yui-gc div.first div.first,.yui-gd div.first,.yui-ge div.first,.yui-gf div.first{float:left;}.yui-g .yui-g .yui-u,.yui-gb .yui-g .yui-u,.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u,.yui-ge .yui-g .yui-u,.yui-gf .yui-g .yui-u{width:48.1%;*margin-left:0;}.yui-g .yui-g div.first{*margin:0;}.yui-gb .yui-g div.first{*margin-right:1px;}.yui-gb .yui-gb .yui-u{_margin-left:.7%;}.yui-gb .yui-g div.first,.yui-gb .yui-gb div.first{*margin-left:0;}.yui-gc .yui-g .yui-u,.yui-gd .yui-g .yui-u{_width:48.1%;*width:48.1%;*margin-left:0;}.yui-g .yui-u,.yui-g .yui-g,.yui-g .yui-gb,.yui-g .yui-gc,.yui-g .yui-gd,.yui-g .yui-ge,.yui-g .yui-gf{width:49.1%;}.yui-g .yui-gb div.first,.yui-gb div.first,.yui-gc div.first,.yui-gd div.first{margin-left:0;}.yui-g .yui-gc div.first,.yui-gc div.first,.yui-gd .yui-g,.yui-gd .yui-u{width:66%;}.yui-gd div.first,.yui-gb .yui-gd div.first{width:32%;}.yui-g .yui-gd div.first{_width:29.9%;}.yui-ge .yui-u,.yui-ge .yui-g,.yui-gf div.first{width:24%;}.yui-ge div.first,.yui-gf .yui-g,.yui-gf .yui-u{width:74.2%;}.yui-gb .yui-ge .yui-u,.yui-gb .yui-gf div.first{*width:24%;_width:20%;}.yui-gb .yui-ge div.first,.yui-gb .yui-gf .yui-u{*width:73.5%;_width:65.5%;}#bd:after,.yui-g:after,.yui-gb:after,.yui-gc:after,.yui-gd:after,.yui-ge:after,.yui-gf:after{content:".";display:block;height:0;clear:both;visibility:hidden;}#bd,.yui-g,.yui-gb,.yui-gc,.yui-gd,.yui-ge,.yui-gf{zoom:1;}
+	#ft{ text-align:center;margin:20px 0 0; padding:10px 0 0;}
+	#ft p{color:#000;line-height:130%; margin:0;font-size:85%}
+	#doc #ft p#ft-notice{_font-size:92%;}
+	#doc #ft p#ft-last{_font-size:92%;}					
+
+#doc{background-color:#fff;border-left:1px solid #aaa;border-right:1px solid #aaa;padding:0;height:100%;border-bottom:1px solid #AAAAAA;}
+
+#doc #hd, #doc #bd #doc #ft{margin:0;}
+#doc #hd{margin:0;}
+#doc #ft{margin:1em 1em 0 1em;padding:.7em 0 .3em 0;font-size:92%}
+#doc #ft p{color:#505050;}
+#doc #ft #ft-notice{font-weight:normal;margin-top:.4em}
+#doc #ft #ft-last{font-weight:normal;margin-top:.6em;color:#b2b2b2}
+#beacon, #bcn{display:none}
+
+a{color:#004cca;text-decoration:none}
+a:hover, #yidHelper a, a#captchaShuffleLink{text-decoration:underline}
+a:visited{color:#800080}
+
+.ygbt, .ygbtem{padding:.2em 1em}
+.ygbtem{font-weight:bold}
+				
+div#ContinueBtn-rnd,div#ContinueYtbBtn-rnd{width:12em;}
+.clear{clear:both;line-height:0;}
+
+h1, h2, h3{font:bold 167% arial,sans-serif; color:#63126b}
+h2{font-weight:normal}
+h2, h3{font-size:100%}
+strong{font-weight:bold}
+.ygbtem {
+     background-color:transparent;
+     border:0 none;
+     font-size:116%;
+     margin:2em 2em 2em 4.5em;
+     margin-top:0.23em;
+     width:100%;
+}
+
+div#doc div#yui-main div.yui-b div#regConfirmBody div.yui-gb#details{overflow:hidden;width:53em;margin:1em 0 0 0}
+div.first,div.second,div.third{float:left;padding-bottom:62em;margin-bottom:-62em}
+div.first{width:61.1%;background:url(https://s.yimg.com/lq//i/reg/horizontal_purpbox_flatten_v2.png) repeat-y scroll -42px 0px;margin-right:0;margin-bottom:-60.5em}
+div.second{width:4.3%;max-width:30px;background:url(https://s.yimg.com/lq//i/reg/horizontal_purpbox_flatten_v2.png) repeat-y scroll 7px 0px}
+div.third{width:32.3%;background:#EEEDF2 url(https://s.yimg.com/lq//i/reg/horizontal_purpbox_flatten_v2.png) repeat-y scroll 210px 0px}
+div.first div.content-container{padding:0 .5em 0 1.8em}
+div.center-top{background:url(https://s.yimg.com/lq//i/reg/corners_purpbox_flatten.png) no-repeat scroll 0px -95px;width:100%;height:21px}
+div.left-top{background-position:0px -69px;background-repeat:repeat-x;width:100%;height:21px}
+div.right-top{background-position:0px -46px;background-repeat:repeat-x;width:100%;height:21px}
+div.left-top{background-image:url(https://s.yimg.com/lq//i/reg/vertical_purpbox_flatten.png)}
+div.left-top div.lcorner{background:url(https://s.yimg.com/lq//i/reg/corners_purpbox_flatten.png) no-repeat scroll 0px -71px;width:100%;height:21px}
+div.right-top{background-image:url(https://s.yimg.com/lq//i/reg/vertical_purpbox_flatten.png)}
+div.right-top div.rcorner{background:url(https://s.yimg.com/lq//i/reg/corners_purpbox_flatten.png) no-repeat scroll 203px -47px;width:100%;height:21px}
+div.bottom{width:53em;height:21px;margin:0;padding:0}
+div.bottom div.bottom-left{background:url(https://s.yimg.com/lq//i/reg/vertical_purpbox_flatten.png) repeat-x scroll 0px -23px;width:61.1%;height:21px;float:left;}
+div.bottom div.bottom-left div.lcorner{background:url(https://s.yimg.com/lq//i/reg/corners_purpbox_flatten.png) no-repeat scroll 0px -23px;width:100%;height:21px}
+div.bottom div.bottom-center{max-width:30px;background:url(https://s.yimg.com/lq//i/reg/corners_purpbox_flatten.png) no-repeat scroll 0px -120px;width:4.3%;height:21px;float:left}
+div.bottom div.bottom-right{background:url(https://s.yimg.com/lq//i/reg/vertical_purpbox_flatten.png) repeat-x 0px 0px;width:32.3%;height:21px;float:left}
+div.bottom div.bottom-right div.rcorner{background:url(https://s.yimg.com/lq//i/reg/corners_purpbox_flatten.png) no-repeat scroll 203px 0px;width:100%;height:21px;float:left}
+ul#acctData{width:100%}
+ul#acctData li{clear:both;margin-top:0;margin-bottom:.4em}
+ul#acctData li .key,.myPswdKey{float:left;color:#744079;text-align:right;width:40%;margin-bottom:.2em}
+ul#acctData li .value,.myPswdVal{float:left;text-align:left;width:58%;margin-left:.4em;margin-bottom:.2em}
+ul#acctData li#ymail{font-weight:bold}
+#details div.first h3{color:#000}
+p#printLnk{display:none;color:#004cca;font-size:85%;float:right;text-align:left;text-indent:1.5em;margin:0 0 .5em  0;background:url(https://s.yimg.com/lq//i/reg/reg_conf_cornerssprites_flatten.png) no-repeat 0px -68px;cursor:hand;cursor:pointer}
+p#printLnk:hover{text-decoration:underline}
+#details div.third{text-align:left}
+#details div.third h3{color:#000;text-align:center;width:80%;margin-left:1.07em;margin-top:5em;float:left;}
+#details div.third input#ContinueBtn-rnd{display:block;margin:2em auto}
+#details div.third div#ContinueBtn-rnd,#details div.third div#ContinueYtbBtn-rnd{margin:2em auto;_margin:2em 2em}
+#details div.third div#toolbar-opt-in{
+          float:left;
+          margin-left:0.54em;
+          margin-top:15px;
+          width:90%;
+}
+#details div.third input#toolbar{float:left;margin:.2em .5em 2em 0}
+#details div.third p{padding-left:5px;width:85%;font-size:85%;float:left;color:#333333;padding-top:3px}
+#toolbarOffer{display:none;border-top:dotted 1px #505050;padding-top:.8em;position:relative}
+#toolbarOffer h4{font-weight:bold}
+#toolbarOffer h4 span.sup{font-size:77%;color:#ff6800;position:relative;top:-.3em;left:.1em}
+#toolbarOffer p{color:#505050;width:51%}
+#toolbarOffer img{margin:.5em 0}
+#toolbarOffer ul{position:absolute;top:.8em;right:0;list-style:none}
+#toolbarOffer ul li{margin-bottom:.2em;color:#505050;line-height:122%;background:url(https://s.yimg.com/lq/i/reg/confpg_promobullet.gif) no-repeat 0 50%; padding-left:.7em}
+#toolbarOffer ul li.link{background:none}
+#toolbarOffer ul li.link a{font:bold 92% arial,sans-serif}
+.h3float {float:left}
+
+#toolbarOffer ul.ym {width:20em;margin-top:3em;}
+#toolbarOffer .bold{font-weight:bold}
+#toolbarOffer ul.ym li{font-weight:bold;font-size:92%;color:#ff9900;line-height:122%}
+#toolbarOffer ul.ym li.desc {font-weight:normal;color:#000;margin-bottom:.8em;background:none}
+#toolbarOffer h4.big-blue{color:#1972ba;font-size:133%;line-height:150%}
+#mktgPrefs p{line-height:122%;color:#505050}
+#details div.third input {float:left;margin:.2em .2em .3em 0}
+ #mktgPrefsField{width:90%;margin-bottom:3em;margin-top:2em}
+div#mktgPrefsFld{margin-top:0.05em;width:90%;margin-left:0.54em;float:left}
+div#mktgPrefsFld label{color:#63126B;font-size:100%;font-weight:bold}
+div#mktgPrefsFld p{color:#505050;line-height:122%;float:left;width:96%}
+#regConfirmBody{padding:1em 2em}
+img.smiley{position:relative;left:-2.9em;margin-bottom:-3em;z-index:1000}
+div#loginInstructions{margin:1em 1.5em;border-top:1px solid #000;border-bottom: 1px solid #000;padding: .5em 0;}
+div#loginInstructions p{margin:0 1.5em;}
+div#loginInstructions .hilight{background: #FF6;padding: 0 2px;}
+.reminder{color:red;font-size:.9em;margin-top:-1.2em}
+.red{color: red}
+.purple{color: #744079}
+* > #mktgPrefs a, #ft a{position: relative} /* safari hack to make these links clickable */
+
+div.rndBtn {background:url(https://s.yimg.com/lq/i/reg/gradients_gif.png) repeat-x 0px -75px;border:solid 1px #ffa516;text-align:left;}
+div.btn-gray{background:url(https://s.yimg.com/lq/i/reg/gradients_gif.png) repeat-x 0px 0px;border:1px solid #999} 
+div.btn-hover{background:url(https://s.yimg.com/lq/i/reg/gradients_gif.png) repeat-x 0px -150px;border-color:#a7cc26} 
+body {background-color:#f2f2f2; }
+
+	div.rndBtn input{position:relative;width:100%;display:block;font-size:100%;text-align:center;font-weight:bold;color:#000;border:0;background-color:transparent;cursor:hand;cursor:pointer;margin:-.5em 0;padding:.5em 0;z-index:1000}
+	div.rndBtn span{display:block;font-size:0;line-height:0;margin:0;height:7px;position:relative;background-color:transparent;background-repeat:no-repeat}
+/*
+       div.rndBtn .ct{background:url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -71px;top:-1px;left:234px;}
+        div.rndBtn .ct .cl{background:url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -2px;left:-235px;}
+        div.rndBtn .cb{background:url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -11px;bottom:-1px;left:234px}
+        div.rndBtn .cb .cl{background:url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -21px;left:-235px;}
+        div.btn-gray .ct{background:url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -81px;left:127px;}
+        div.btn-gray .ct .cl{background: url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -90px;left:-128px;}
+        div.btn-gray .cb{background: url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -109px;left:127px;}
+        div.btn-gray .cb .cl{background: url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -99px;left:-128px;}
+        div.btn-hover .ct{background: url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -62px;}
+        div.btn-hover .ct .cl{background: url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -52px;}
+        div.btn-hover .cb{background: url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -42px;margin-left:-1px}
+        div.btn-hover .cb .cl{background: url(https://s.yimg.com/lq/i/reg/smileyliamandroundedcorners_gif.png) no-repeat 0px -32px;}           
+*/
+/* w3c */
+
+       div.btn-standard .ct{background:url(https://s.yimg.com/lq//i/reg/reg_conf_cornerssprites_flatten.png) no-repeat 0px -35px;top:-1px;left:150px;}
+        div.btn-standard .ct .cl{background:url(https://s.yimg.com/lq//i/reg/reg_conf_cornerssprites_flatten.png) no-repeat 0px -44px;left:-151px;}
+        div.btn-standard .cb{background:url(https://s.yimg.com/lq//i/reg/reg_conf_cornerssprites_flatten.png) no-repeat 0px -52px;bottom:-1px;left:150px}
+        div.btn-standard .cb .cl{background:url(https://s.yimg.com/lq//i/reg/reg_conf_cornerssprites_flatten.png) no-repeat 0px -60px;left:-151px;}
+
+        div.btn-hover .ct{background: url(https://s.yimg.com/lq//i/reg/reg_conf_cornerssprites_flatten.png) no-repeat 0px -17px;}
+        div.btn-hover .ct .cl{background: url(https://s.yimg.com/lq//i/reg/reg_conf_cornerssprites_flatten.png) no-repeat 0px 0px;}
+        div.btn-hover .cb{background: url(https://s.yimg.com/lq//i/reg/reg_conf_cornerssprites_flatten.png) no-repeat 0px -26px;}
+        div.btn-hover .cb .cl{background: url(https://s.yimg.com/lq//i/reg/reg_conf_cornerssprites_flatten.png) no-repeat 0px -9px;} 
+
+
+/* for when the print friendly JS is rendered */
+.print,.myPswdKey,.myPswdVal,.forget,.upToDate{display:none}
+		
+@media print{
+	#regConfirmBody{padding:2.5em 3em 1em 5em}
+	h1{margin-left:10px;margin-bottom:0}
+	h2,#ygmaproplinks,#details div.first h3,div.first p,div.second,div.third,div.first .left-top,div.second .right-top,div.bottom,div#mktgPrefs,div#toolbarOffer,div#ft, .reminder{display:none}
+	div#doc div#yui-main div.yui-b div#regConfirmBody div.yui-gb#details{width:100%;padding:0;margin:0;overflow:visible}
+	div.first,body{background:none}
+	div.first{padding-bottom:0;margin-bottom:0;float:none}
+	div.first .content-container{width:100%}
+	ul#acctData{list-style:none}
+	ul#acctData li strong{font-weight:normal}
+	ul#acctData li .key,.myPswdKey{color:#000;vertical-align:top;padding-top:0;margin-top:0;width:31%}
+	ul#acctData li .value,.myPswdVal{color:#744079;font-weight:bold;width:60%}
+	.myPswdVal{margin-top:2.0em;padding-top:.5em;border-top:1px dotted #744079}
+	img.smiley{position:absolute;left:2em;top:8.5em}
+	.print,.myPswdKey,.myPswdVal,.forget,.upToDate{display:block!important}
+	div#doc div#yui-main div.yui-b div#regConfirmBody div.yui-gb#details div.first{width:100%}		
+	div.first #div1 h3,div.first #div1 p,div.first #div2 h3,div.first #div2 p,div.first #div3 h3,div.first #div3 p{display:block}
+	div.first #div3 ol li{list-style:decimal inside}
+	#details div.passwd span.val{border:none}
+	#div3 h3{margin-top:3em}
+	#doc{border:none}
+	h2.print{margin-left:10px}
+	div#loginInstructions, div#loginInstructions p, p#ymail{display:block;}
+	p#printLnk{display:none!important}
+	.forget,.upToDate{clear:both;}
+}
+
+#ytb-install{display:none}
+#ytb-install P.desc {margin-top: -20px; padding-left: 1.5em; width: 15em;}
+#ytb-install-panel div.bd iframe{width:100%;height:100%/*width:770px;height:31.45em*/}
+#ContinueYtbBtn-rnd{margin:0;padding:0;cursor:pointer;cursor:hand}
+#ContinueYtbBtn-rnd p{margin:0;padding:0;text-align:center;width:10.8em}
+.btn-hover p{text-decoration:underline}
+#IAgreeBtn-rnd {
+     background:transparent url(https://s.yimg.com/lq//i/reg/reg_gradients.png) repeat scroll 0 0;
+     border:1px solid #F2A322;
+     font-weight:bold;
+     height:2.54em;
+     margin-left:0.77em;
+     margin-right:auto;
+     margin-top:2em;
+     right:24.5em;
+     width:14.15em;
+     margin-bottom:4em;
+     float:left;
+}
+.buffer{
+ display:block;width:100%;height:1px;
+}
+body{
+      background-color:#f2f2f2; 
+}
